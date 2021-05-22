@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynn Allenbach</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600&family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container__header header-flex">
+            <div class="logo-menu-flex">
+                <a href="./index.html" class="logo">Lynn Allenbach</a>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </div>
+            <nav class="nav nav--hidden">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="./blog.html" class="nav__link">blog</a></li>
+                    <li class="nav__item"><a href="./shop.html" class="nav__link">shop</a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link">about</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="about">
+            <div class="container__header divide">
+                <div class="about__img-container" style="background-image: url('./img/about.jpg');" alt="portrait of myself">
+                </div>
+                <div class="about__text-container">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sequi non nesciunt minima, eveniet pariatur et enim atque nulla eius.</p>
+                    <p>Officia ab odio, iusto veritatis explicabo beatae officiis usdam fuga dolore saepe corporis ad illum minus?</p>
+                    <p>Voluptatem, officia deleniti. Repudiandae quibusdam nihil dicta aliquam exercitationem! Est odio ipsam illum iusto exercitationem provident deleniti voluptatem dolorum cum.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script>
+        const btn = document.querySelector('.menu-btn');
+        const header = document.querySelector('.header');
+        const nav = document.querySelector('.nav');
+
+        btn.addEventListener('click', () => {
+            header.classList.toggle('header-full-height');
+            nav.classList.toggle('nav--hidden');
+            btn.classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynn Allenbach</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600&family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container__header header-flex">
+            <div class="logo-menu-flex">
+                <a href="./index.html" class="logo">Lynn Allenbach</a>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </div>
+            <nav class="nav nav--hidden">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="./blog.html" class="nav__link">blog</a></li>
+                    <li class="nav__item"><a href="./shop.html" class="nav__link">shop</a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link">about</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="description container-text">
+                <h1>Blog</h1>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, exercitationem id iusto hic dicta reprehenderit aliquam sequi deserunt voluptate, quisquam laboriosam iste laborum laudantium. Sunt fugiat ad asperiores quisquam accusantium?</p>
+                <hr>
+            </section>
+            <a href="./blogposts/blogpost_01/blogpost.html">
+                <article class="post">
+                    <div class="post-img-wrapper">
+                        <img src="./blogposts/blogpost_01/img/thumbnail.jpg" alt="">
+                    </div>
+                    <div class="post-text">
+                        <p class="post-meta"><span class="post-topic">forest</span><span class="post-date">24. Mai 2021</span></p>
+                        <h2 class="post-title">Lorem ipsum dolor sit amet consectetur</h2>
+                        <p class="post-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ullam dolorum fuga ea quibusdam, non quasi totam sunt fugit incidunt necessitatibus, placeat ipsam laboriosam omnis?</p>
+                    </div>
+                </article>
+            </a>
+            <a href="./blogposts/blogpost_02/blogpost.html">
+                <article class="post">
+                    <div class="post-img-wrapper">
+                        <img src="./blogposts/blogpost_02/img/thumbnail.jpg" alt="">
+                    </div>
+                    <div class="post-text">
+                        <p class="post-meta"><span class="post-topic">foggy mountain forest</span><span class="post-date">24. Mai 2021</span></p>
+                        <h2 class="post-title">Lorem ipsum dolor sit amet consectetur</h2>
+                        <p class="post-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ullam dolorum fuga ea quibusdam, non quasi totam sunt fugit incidunt necessitatibus, placeat ipsam laboriosam omnis?</p>
+                    </div>
+                </article>
+            </a>
+            <a href="./blogposts/blogpost_02/blogpost.html">
+                <article class="post">
+                    <div class="post-img-wrapper">
+                        <img src="./blogposts/blogpost_03/img/thumbnail.jpg" alt="">
+                    </div>
+                    <div class="post-text">
+                        <p class="post-meta"><span class="post-topic">deep woods</span><span class="post-date">24. Mai 2021</span></p>
+                        <h2 class="post-title">Lorem ipsum dolor sit amet consectetur</h2>
+                        <p class="post-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ullam dolorum fuga ea quibusdam, non quasi totam sunt fugit incidunt necessitatibus, placeat ipsam laboriosam omnis?</p>
+                    </div>
+                </article>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script>
+        const btn = document.querySelector('.menu-btn');
+        const header = document.querySelector('.header');
+        const nav = document.querySelector('.nav');
+
+        btn.addEventListener('click', () => {
+            header.classList.toggle('header-full-height');
+            nav.classList.toggle('nav--hidden');
+            btn.classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

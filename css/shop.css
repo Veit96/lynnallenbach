@@ -1,0 +1,69 @@
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop__product {
+    margin-bottom: 2rem;
+}
+
+.shop__product-img-wrapper {
+    width: 100%;
+    padding-top: 75%; /* determines image dimensions */
+    position: relative;
+    margin-bottom: .3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid var(--clr-light);
+}
+.shop__product-img-wrapper:hover {
+    border: 1px solid var(--clr-accent);
+}
+.shop__product-img {
+    width: 100%;
+}
+.shop__product-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 0 auto;
+}
+.shop__product-text-wrapper p {
+    margin: 0;
+}
+.name {
+    font-weight: 700;
+}
+.price {
+    font-family: var(--ff-accent);
+    font-weight: 300;
+    font-size: 1rem;
+    font-style: italic;
+}
+.price::before{
+    content: 'CHF ';
+}
+
+/* Dynamic Behavior */
+.shop__product {
+    width: 100%;
+}
+@media (min-width: 500px) {
+    .shop__product {
+        width: 48%;
+    }
+}
+@media (min-width: 900px) {
+    .shop__product {
+        width: 31%;
+    }
+}
+@media (min-width: 2000px) {
+    .shop__product {
+        width: 22%;
+    }
+}
+/* */
