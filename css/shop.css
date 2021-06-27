@@ -21,9 +21,6 @@
 .shop__product-img-wrapper:hover {
     border: 1px solid var(--clr-accent);
 }
-.shop__product-img {
-    width: 100%;
-}
 .shop__product-text-wrapper {
     display: flex;
     justify-content: space-between;
